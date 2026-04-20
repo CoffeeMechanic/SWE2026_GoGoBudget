@@ -11,8 +11,12 @@ public class Expense
         this.amount = amount;
         this.category = category;
     }
-
+    //Getters
     public Long getId() { return id; }
     public double getAmount() { return amount; }
     public String getCategory() { return category; }
+    //Setters
+    public void setId(Long id) {this.id = id;}
+    public void setAmount(double amount) {this.amount = amount;}
+    public void setCategory(String category) {this.category = category;}
 }

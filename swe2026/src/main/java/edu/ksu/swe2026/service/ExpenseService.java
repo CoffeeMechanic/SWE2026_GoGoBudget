@@ -24,8 +24,24 @@ public class ExpenseService {
         return expense;
     }
 
+    public Expense updateExpense(Long id, double amount, String category) {
+        for (Expense e : expenses) {
+            if (e.getId().equals(id)) {
+                e.setAmount(amount);
+                e.setCategory(category);
+                return e;
+            }
+        }
+        return null;
+    }
+
     public List<Expense> getAllExpenses() {
         return expenses;
+    }
+
+    public void deleteExpense(Long id)
+    {
+        expenses.removeIf(e -> e.getId().equals(id));
     }
 
     public int getUserPoints() {
