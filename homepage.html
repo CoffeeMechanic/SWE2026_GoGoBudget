@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GoGoBudget</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
     
+    <div class="container">
+
+        <!--Navigation bar on left side-->
+        <aside class="sidebar">
+            <h2 class="logo">GoGoBudget</h2>
+            <nav>
+                <ul>
+                    <li class="current"><a href="homepage.html">Dashboard</a></li>
+                    <li><a href="addExpense.html">Expense</a></li>
+                    <li><a href="setBudget.html">Profile</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!--Need to add user info functionality, 
+        placeholds written in for now-->
+        <main class="main">
+            
+            <header class="welcome">
+                <h1>Welcome, <span id="user-display-name">Placeholder</span></h1>
+            <header>
+            
+            <section class="card budget-info">
+                <h3>Monthly Budget: <span>$Placeholder</span></h3>
+                <p>Spent: $Placeholder &nbsp;&nbsp; Remaining: $Placeholder</p>
+
+                <!--Progress bar, will need to add a variable for changing width-->
+                <div class="progress-bar">
+                    <div class="progress" style="width: 54%;"></div>
+                </div>
+
+                <p class="percent">Placeholder% of Budget Used</p>
+            </section>
+
+            <section class="stats">
+                <div class="card stat last-expense">
+                    <h4>Today's Spending:</h4>
+                    <p>$Placeholder</p>
+                </div>
+                <div class="card stat week-expenses">
+                    <h4>This Week:</h4>
+                    <p>$Placeholder</p>
+                </div>
+            </section>
+
+            <section class="streak-info">
+                <p>Streak: Placeholder Days | <span> Level: Placeholder</span></p>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
