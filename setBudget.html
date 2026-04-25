@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Set Budget</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+    form {
+            padding: 30px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+    }
+
+    h1 {
+        color: #4CAF50;
+        margin-bottom: 20px;
+    }
+
+    .input-data input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solic #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+</style>
+
 </head>
 
 <body>
-    
+    <div class="container">
+
+        <aside class="sidebar">
+            <h2 class="logo">GoGoBudget</h2>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Dashboard</a></li>
+                    <li><a href="addExpense.html">Add Expense</a></li>
+                    <li class="current"><a href="setBudget.html">Set Budget</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <form id="set-budget">
+            <h1>Set Budget</h1>
+            
+            <div class="input-data">
+                <div class="card update-budget">
+                    <label for="update-budget">Update Budget:</label>
+                    <input id="update-budget" name="update-budget" placeholder="Update Budget" type="number" required>
+                </div>
+            </div>
+            
+            <div class="update">
+                <button type="submit">Update</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

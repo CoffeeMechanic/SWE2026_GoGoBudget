@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Expense</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+    form {
+            padding: 30px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+    }
+
+    h1 {
+        color: #4CAF50;
+        margin-bottom: 20px;
+    }
+
+    .input-data input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solic #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+</style>
 </head>
 
 <body>
-    
+    <div class="container">
+
+        <!--Navigation bar on left side-->
+        <aside class="sidebar">
+            <h2 class="logo">GoGoBudget</h2>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Dashboard</a></li>
+                    <li class="current"><a href="addExpense.html">Add Expense</a></li>
+                    <li><a href="setBudget.html">Set Budget</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <form id="add-expense">
+            <h1>Add Expense</h1>
+            <div class="input-data">
+                <div class="card amount">
+                    <label for="amount">Amount:</label>
+                    <input id="amount" name="card amount" placeholder="Amount" type="number" required>
+                </div>
+                <div class="card category">
+                    <label for="category">Category:</label>
+                    <input id="category" name="category" placeholder="Category" type="text" required>
+                </div>
+                <div class="card date">
+                    <label for="date">Date:</label>
+                    <input id="date" name="date" placeholder="Date" type="date" required>
+                </div>
+            </div>
+
+            <div class="add">
+                <button type="submit">Add</button>
+            </div>
+        </form>
 </body>
 </html>
