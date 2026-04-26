@@ -16,8 +16,9 @@ public class ExpenseController {
 
     @PostMapping
     public Expense addExpense(@RequestParam double amount,
-                              @RequestParam String category) {
-        return service.addExpense(amount, category);
+                              @RequestParam String category,
+                              @RequestParam String date) {
+        return service.addExpense(amount, category, date);
     }
 
     @GetMapping
@@ -28,8 +29,9 @@ public class ExpenseController {
     @PutMapping("/{id}")
     public Expense updateExpense(@PathVariable Long id,
                                  @RequestParam double amount,
-                                 @RequestParam String category) {
-        return service.updateExpense(id, amount, category);
+                                 @RequestParam String category,
+                                 @RequestParam String date) {
+        return service.updateExpense(id, amount, category, date);
     }
 
     @DeleteMapping("/{id}")

@@ -33,30 +33,35 @@
             <header>
             
             <section class="card budget-info">
-                <h3>Monthly Budget: <span>$Placeholder</span></h3>
-                <p>Spent: $Placeholder &nbsp;&nbsp; Remaining: $Placeholder</p>
+                <h3>Monthly Budget: <span id="monthly-budget">$0.00</spanid></span></h3>
+
+                <p>
+                    Spent: <span id = "total-spent">$0.00</span>
+                    &nbsp;&nbsp;
+                    Remaining: <span id="remaining-budget">$0.00</span>
+                </p>
 
                 <!--Progress bar, will need to add a variable for changing width-->
                 <div class="progress-bar">
                     <div class="progress" style="width: 54%;"></div>
                 </div>
 
-                <p class="percent">Placeholder% of Budget Used</p>
+                <p class="percent" id="budget-percent">0% of Budget Used</p>
             </section>
 
             <section class="stats">
                 <div class="card stat last-expense">
                     <h4>Today's Spending:</h4>
-                    <p>$Placeholder</p>
+                    <p id="today-spending">$0.00</p>
                 </div>
                 <div class="card stat week-expenses">
                     <h4>This Week:</h4>
-                    <p>$Placeholder</p>
+                    <p id="week-spending">$0.00</p>
                 </div>
             </section>
 
             <section class="streak-info">
-                <p>Streak: Placeholder Days | <span> Level: Placeholder</span></p>
+                <p>Streak: <span id ="streak">0</span> | <span id="" Level: Placeholder</span></p>
             </section>
         </main>
     </div>

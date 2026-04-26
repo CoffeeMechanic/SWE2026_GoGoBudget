@@ -72,6 +72,7 @@
 
     const amount = document.getElementById("amount").value;
     const category = document.getElementById("category").value;
+    const date = document.getElementById("date").value;
 
     const response = await fetch(
         `http://localhost:8080/expenses?amount=${amount}&category=${encodeURIComponent(category)}`,
