@@ -66,5 +66,26 @@
                 <button type="submit">Add</button>
             </div>
         </form>
+        <script>
+            document.getElementById("add-expense").addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const amount = document.getElementById("amount").value;
+    const category = document.getElementById("category").value;
+
+    const response = await fetch(
+        `http://localhost:8080/expenses?amount=${amount}&category=${encodeURIComponent(category)}`,
+        {
+            method: "POST"
+        }
+    );
+    if(response.ok) {
+        alert("Expense added!")
+        window.location.href = "homepage.html";
+    } else {
+        alert("Failed to add expense");
+    }
+});
+        </script>
 </body>
 </html>
