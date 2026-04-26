@@ -43,4 +43,8 @@ public class ExpenseController {
     public int getPoints() {
         return service.getUserPoints();
     }
+    @GetMapping("/total")
+public double getTotalExpenses() {
+    return service.getTotalExpenses();
+}
 }
