@@ -50,11 +50,7 @@ public class ExpenseService {
     public int getUserPoints() {
         return user.getPoints();
     }
-    /*
- * Calculates the total sum of all expenses stored in memory.
- * Iterates through the expense list and accumulates the amount values.
- * Used for reporting total user spending.
- */
+    
     public double getTotalExpenses() {
     double total = 0;
 
